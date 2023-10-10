@@ -1,0 +1,21 @@
+ALGORITHM algorithm_Comptage
+VAR
+    nobre_ca,mot, i,voyelle:entier
+    "phrase": CHAR
+BEGIN
+    i=0;
+    écrire("veuillez saisir une phrase")
+    lire (phrase)
+    nobreCa= phrase.lenght
+    pour i <-- nobre_ca.lenght faire
+    si phrase[i]== " " or phrase[i]=="." alors
+    mot= mot+1
+    fin si
+    si phrase[i] == 'a' or phrase[i]=='e' or phrase[i]=='i' or phrase[i]=='o' or phrase[i]=='u' or phrase[i]=='y'alors
+    voyelle=voyelle + 1
+    fin si
+    fin pour
+    ecrire("le nombre de nobreCa est": nobre_ca);
+    ecrire("le nombre de mot est": mot);
+    ecrire("le nombre de mot est": voyelle);
+END
